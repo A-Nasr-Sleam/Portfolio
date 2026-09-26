@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: 'Inter','sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #EBEAE4;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.logo{
+    text-decoration: none;
+    color: #141F16;
+    text-transform: uppercase;
+    font-weight: 2em;
+}
+
+.navigation a{
+    color:#141F16;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 50;
+    padding-left: 30px;
+
+}
+
+
+.navigation a:hover{
+    color: #8C935D;
+}
+
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/main\ background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main h2{
+    color:#EBEAE4;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+.main h2 span{
+        display: inline-block;
+        color:#EBEAE4;
+        font-size: 3em;
+        font-weight: 600;
+}
+
+.main h3{
+        color:#8C935D;
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+}
+
+.main-btn{
+        color:#EBEAE4;
+        background-color:#D4AF37 ;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight:600;
+        display: inline-block;
+        padding: 0.737em 1.185em;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        transition: 0.7s ease;
+}
+
+.main-btn:hover{
+        color:#EBEAE4;
+        background-color:#D4AF37 ;
+        text-decoration: none;
+        transform: scale(1.1);
+}
+
+.social-icons a{
+    color:#D4AF37;
+    font-size: 1.7em;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color:#141F16;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.card{
+    background-color: #141F16;
+    width: 21.25em;
+    color: #EBEAE4;
+    box-shadow: 0 5px 30px  #141F16;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    transition: 0.7s ease ;
+}
+
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #595D38;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info h3{
+    color:#EBEAE4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+
+#Services{
+    background-color: #8C935D;
+}
+
+
+.projects{
+    background-color: #141F16;
+}
+
+.projects h2{
+    color: #EBEAE4;
+}
+
+.projects content{
+    margin-top:30px;
+} 
+
+.project-card{
+    background-color: #8C935D;
+    color: #EBEAE4;
+    border: 1px solid;
+    border-color: #EBEAE4;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image{
+   opacity:0.8 ;
+}
+
+.project-image img{
+    width:100%;
+}
+
+.project-info{
+    padding:1em;
+}
+
+.project-category{
+    font-size: 0.9em;
+    margin-left:20px ;
+}
+
+.summary-list{
+    margin-left:10px;
+}
+
+.project-title{
+    display: flex;
+    justify-content:space-between;
+    text-transform: uppercase;
+    font-weight:800;
+    margin-top: 10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color:#D4AF37;
+    transition: 0.7s ease;
+}
+
+.more-details:hover {
+    color:#EBEAE4;
+
+}
+
+.contact{
+    background-color: #8C935D;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+
+.contact .info .p{
+    font-size: 1.5em;
+}
+
+.contact .content .card .info p{
+    text-align: center;
+}
+
+.footer{
+    background-color: #141F16;
+    color:#EBEAE4;
+    padding: 2em;
+    display: flex;
+    justify-content:space-between;
+    flex-shrink: 0;
+}
+
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color:#D4AF37;
+}
+
+.footer .social-icons a{
+    font-size: 1.6em;
+}
+
+
+
+@media (max-width: 1023px){
+     /* 1. FIX THE CUT-OFF: Disable fixed background attachment on mobile */
+    .main {
+        min-height: auto;
+        background-attachment: scroll; /* Forces browser to calculate page height correctly */
+        padding-top: 120px; /* Prevents fixed header from overlapping content */
+    }
+
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size:1em;
+    } 
+
+    .main-content h3{
+        font-size :1.6em;
+    }
+    
+    .footer {
+        flex-wrap: wrap; /* Allows text and icons to stack on mobile */
+        gap: 15px;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-title{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .footer .social-icons a{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 641px){
+    body {
+        font-size: 12px; /* Fixed: Added 'px' unit */
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+    
+    /* Forces footer elements to stack vertically on small phones */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-title{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .footer .social-icons a{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 300px){
+    body {
+        font-size: 10px; /* Fixed: Added 'px' unit */
+    }
+
+    .main-content h2 {
+        font-size: 0.6em;
+    }
+
+    .main-content h3 {
+        font-size: 1em;
+    }
+    
+    .footer-title{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .footer .social-icons a{
+        font-size: 1em;
+    }
+}
