@@ -294,12 +294,22 @@ section{
         padding: 80px 20px;
     }
 
-    .main-content h2{
-        font-size:1em;
-    } 
+    .main > div{
+        width: 50%;
+    }
 
-    .main-content h3{
-        font-size :1.6em;
+    .main h2{
+        font-size: 1em;
+    }
+
+    .main h2 span{
+        display: block;
+        font-size: 2em;
+    }
+
+    .main h3{
+        font-size: 1.2em;
+        letter-spacing: normal;
     }
     
     .footer {
@@ -326,14 +336,6 @@ section{
         font-size: 12px; /* Fixed: Added 'px' unit */
     }
 
-    .main-content h2 {
-        font-size: 0.8em;
-    }
-
-    .main-content h3 {
-        font-size: 1.4em;
-    }
-    
     /* Forces footer elements to stack vertically on small phones */
     .footer {
         flex-direction: column;
@@ -355,14 +357,6 @@ section{
         font-size: 10px; /* Fixed: Added 'px' unit */
     }
 
-    .main-content h2 {
-        font-size: 0.6em;
-    }
-
-    .main-content h3 {
-        font-size: 1em;
-    }
-    
     .footer-title{
         font-size: 1em;
         font-weight: 600;
